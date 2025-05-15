@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-15T16:54:38.122860" rpa="false" schemaversion="5">
+<suite id="s1" name="Test RadioButton" source="D:\RobotframeworkPractise\Tests\Test_RadioButton.robot">
+<test id="s1-t1" name="Entering into the page" line="6">
+<kw name="open with the browser url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:38.358415" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-15T16:54:38.358249" elapsed="6.372194"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-15T16:54:44.731266" elapsed="0.081779"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-15T16:54:44.814182" elapsed="0.003941"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:38.357785" elapsed="6.460488"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-15T16:54:47.819509" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-15T16:54:44.818782" elapsed="3.000893"/>
+</kw>
+<kw name="Select impressive option from 3 radio buttons">
+<kw name="Page Should Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:47.869849" level="INFO">Current page contains radio button 'name:radiooptions'.</msg>
+<arg>name:radiooptions</arg>
+<doc>Verifies radio button ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-05-15T16:54:47.821018" elapsed="0.048932"/>
+</kw>
+<kw name="Page Should Not Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:47.891519" level="INFO">Current page does not contain radio button 'id:checkbox1'.</msg>
+<arg>id:checkbox1</arg>
+<doc>Verifies radio button ``locator`` is not found from current page.</doc>
+<status status="PASS" start="2025-05-15T16:54:47.870122" elapsed="0.021518"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:47.892011" level="INFO">Selecting 'Male' from radio button 'radiooptions'.</msg>
+<arg>radiooptions</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-15T16:54:47.891842" elapsed="0.085792"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:47.820222" elapsed="0.157696"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-15T16:54:50.979251" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-15T16:54:47.978506" elapsed="3.000905"/>
+</kw>
+<kw name="Verify that the radio button is selected">
+<kw name="Radio Button Should Be Set To" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:50.980591" level="INFO">Verifying radio button 'radiooptions' has selection 'Male'.</msg>
+<arg>radiooptions</arg>
+<arg>Male</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<status status="PASS" start="2025-05-15T16:54:50.980386" elapsed="0.033657"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:50.979932" elapsed="0.034249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-15T16:54:54.015306" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-15T16:54:51.014554" elapsed="3.001080"/>
+</kw>
+<kw name="Select the check box for cricket, Hockey and Movies">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:54.017882" level="INFO">Clicking element 'id=checkbox1'.</msg>
+<arg>id=checkbox1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:54:54.017484" elapsed="0.111545"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:54.129901" level="INFO">Clicking element 'id=checkbox2'.</msg>
+<arg>id=checkbox2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:54:54.129470" elapsed="0.106504"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:54.236688" level="INFO">Clicking element 'id=checkbox3'.</msg>
+<arg>id=checkbox3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:54:54.236329" elapsed="0.082362"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:54.016865" elapsed="0.301964"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-15T16:54:57.321381" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-15T16:54:54.319969" elapsed="3.001651"/>
+</kw>
+<kw name="unselect the hockey check box">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:54:57.324431" level="INFO">Unselecting checkbox 'id=checkbox3'.</msg>
+<arg>id=checkbox3</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:54:57.324096" elapsed="0.104917"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:57.323496" elapsed="0.105726"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-15T16:55:00.431408" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-15T16:54:57.430053" elapsed="3.001561"/>
+</kw>
+<kw name="verify the hockey checkbox is not selected">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:55:00.433525" level="INFO">Verifying checkbox 'id=checkbox3' is not selected.</msg>
+<arg>id=checkbox3</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2025-05-15T16:55:00.433038" elapsed="0.038407"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:55:00.432576" elapsed="0.039376"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:54:38.357150" elapsed="22.116069"/>
+</test>
+<doc>This is to verify the radio button</doc>
+<status status="PASS" start="2025-05-15T16:54:38.124879" elapsed="22.350424"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test RadioButton" id="s1" pass="1" fail="0" skip="0">Test RadioButton</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
