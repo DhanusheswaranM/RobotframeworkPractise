@@ -1,99 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-16T16:15:12.188302" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Alert" source="D:\RobotframeworkPractise\Tests\Test_Alert.robot">
-<test id="s1-t1" name="To verify the alert" line="6">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T11:07:24.175485" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Drag and drop" source="D:\RobotframeworkPractise\Tests\Test_Drag_and_drop.robot">
+<test id="s1-t1" name="Drag and drop test case" line="9">
 <kw name="Open the browser with url">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:12.497449" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Alerts.html'.</msg>
-<arg>https://demo.automationtesting.in/Alerts.html</arg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-16T16:15:12.497237" elapsed="3.871874"/>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T11:07:24.425719" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-19T11:07:24.425575" elapsed="5.842938"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-19T11:07:30.269129" level="INFO">Opening url 'https://demoqa.com/droppable'</msg>
+<arg>https://demoqa.com/droppable</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-19T11:07:30.268887" elapsed="5.506101"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-16T16:15:16.369543" elapsed="0.043659"/>
+<status status="PASS" start="2025-05-19T11:07:35.775948" elapsed="0.297999"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-16T16:15:16.413410" elapsed="0.001713"/>
+<status status="PASS" start="2025-05-19T11:07:36.074612" elapsed="0.005523"/>
 </kw>
-<status status="PASS" start="2025-05-16T16:15:12.496542" elapsed="3.920077"/>
+<status status="PASS" start="2025-05-19T11:07:24.425103" elapsed="11.655204"/>
 </kw>
-<kw name="Select the confirmation alert">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:16.419390" level="INFO">Clicking element 'xpath=//div[@class='tabpane pullleft']/ul/li[2]/a'.</msg>
-<arg>xpath=//div[@class='tabpane pullleft']/ul/li[2]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T16:15:16.418564" elapsed="0.142165"/>
+<kw name="Verify element text before drag">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T11:07:36.082064" level="INFO">Verifying element 'id:droppable' contains exact text 'Drop here'.</msg>
+<arg>id:droppable</arg>
+<arg>Drop here</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T11:07:36.081256" elapsed="0.048473"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:16.561377" level="INFO">Clicking button 'css:.btn.btn-primary'.</msg>
-<arg>css:.btn.btn-primary</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T16:15:16.561046" elapsed="0.085836"/>
+<status status="PASS" start="2025-05-19T11:07:36.080843" elapsed="0.049108"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-16T16:15:21.648830" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-16T16:15:16.647040" elapsed="5.002118"/>
+<kw name="Drag the element and drop">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-05-19T11:07:36.130886" elapsed="0.587011"/>
 </kw>
-<kw name="Alert Should Be Present" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:21.650072" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>Press a Button !</arg>
-<arg>action=DISMISS</arg>
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<status status="PASS" start="2025-05-16T16:15:21.649655" elapsed="0.026368"/>
+<status status="PASS" start="2025-05-19T11:07:36.130487" elapsed="0.587593"/>
 </kw>
-<status status="PASS" start="2025-05-16T16:15:16.417776" elapsed="5.258991"/>
+<kw name="Verify element Text after drag">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T11:07:36.719085" level="INFO">Verifying element 'id:droppable' contains exact text 'Dropped!'.</msg>
+<arg>id:droppable</arg>
+<arg>Dropped!</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T11:07:36.718882" elapsed="0.015887"/>
 </kw>
-<kw name="Select the prompt alert">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:21.684152" level="INFO">Clicking element 'xpath=//div[@class='tabpane pullleft']/ul/li[3]/a'.</msg>
-<arg>xpath=//div[@class='tabpane pullleft']/ul/li[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T16:15:21.681371" elapsed="0.225289"/>
+<status status="PASS" start="2025-05-19T11:07:36.718560" elapsed="0.016433"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:21.907316" level="INFO">Clicking button 'css:.btn.btn-info'.</msg>
-<arg>css:.btn.btn-info</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T16:15:21.906981" elapsed="0.116819"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-16T16:15:27.025836" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-16T16:15:22.024159" elapsed="5.001962"/>
-</kw>
-<kw name="Input Text Into Alert" owner="SeleniumLibrary">
-<arg>text= hi welcome</arg>
-<doc>Types the given ``text`` into an input field in an alert.</doc>
-<status status="PASS" start="2025-05-16T16:15:27.026326" elapsed="0.014186"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-16T16:15:32.041825" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-16T16:15:27.040981" elapsed="5.001138"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-16T16:15:32.077914" level="INFO">Current page contains text 'hi welcome'.</msg>
-<arg>hi welcome</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-05-16T16:15:32.042582" elapsed="0.035480"/>
-</kw>
-<status status="PASS" start="2025-05-16T16:15:21.678841" elapsed="10.399381"/>
-</kw>
+<status status="PASS" start="2025-05-19T11:07:24.424540" elapsed="12.311016"/>
+</test>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-16T16:15:32.078928" elapsed="2.448482"/>
+<status status="PASS" start="2025-05-19T11:07:36.737436" elapsed="4.493076"/>
 </kw>
-<status status="PASS" start="2025-05-16T16:15:12.495515" elapsed="22.034006"/>
-</test>
-<status status="PASS" start="2025-05-16T16:15:12.190421" elapsed="22.342267"/>
+<status status="PASS" start="2025-05-19T11:07:24.176788" elapsed="17.053941"/>
 </suite>
 <statistics>
 <total>
@@ -102,7 +72,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Test Alert" id="s1" pass="1" fail="0" skip="0">Test Alert</stat>
+<stat name="Test Drag and drop" id="s1" pass="1" fail="0" skip="0">Test Drag and drop</stat>
 </suite>
 </statistics>
 <errors>

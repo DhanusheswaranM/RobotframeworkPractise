@@ -1,0 +1,10 @@
+datasources:79eb4a0bdf65f36eb39661b8a25b703579e309c7
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:d0a30e950474e5087abba9ba8bf313cd152ef268
+--test TestCases.ForgetPasswordTest.Validate Reset Password Functionality
+--test TestCases.ForgetPasswordTest.Validate Cancel functionality
+--test TestCases.LoginPageTest.Validate Unsuccessful Login using invalid credentials
+--test TestCases.LoginPageTest.Validate Unsuccessful Login for blank username
+--test TestCases.LoginPageTest.Validate Unsuccessful Login for blank password
+--test TestCases.LoginPageTest.Validate Successful Login for valid credentials

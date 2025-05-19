@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T16:30:16.024875" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="D:\RobotframeworkPractise\Task1\Tests\Test_Login.robot">
+<test id="s1-t1" name="Login to the website" line="13">
+<status status="FAIL" start="2025-05-19T16:30:16.296023" elapsed="0.000896">Test cannot be empty.</status>
+</test>
+<doc>To verify the login functionality for sauce demo website</doc>
+<status status="FAIL" start="2025-05-19T16:30:16.026367" elapsed="0.274785"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-19T16:30:16.291412" level="ERROR">[ DataDriver ] Error in robot file:
+  File "D:\RobotframeworkPractise\Task1\Tests\Test_Login.robot", line 0</msg>
+<msg time="2025-05-19T16:30:16.291732" level="ERROR">In source file:
+  File "D:\RobotframeworkPractise\Task1\Resources\LoginDatas.csv", line 0</msg>
+<msg time="2025-05-19T16:30:16.295368" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>

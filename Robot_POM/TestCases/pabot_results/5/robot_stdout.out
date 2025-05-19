@@ -1,0 +1,14 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.LoginPageTest :: Tests to login to login page                       
+==============================================================================
+Validate Successful Login for valid credentials                       | PASS |
+------------------------------------------------------------------------------
+TestCases.LoginPageTest :: Tests to login to login page               | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\RobotframeworkPractise\Robot_POM\TestCases\pabot_results\5\output.xml

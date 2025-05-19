@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T22:01:38.370855" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="D:\RobotframeworkPractise\Task1\Tests\Test_Login.robot">
+<test id="s1-t1" name="Login to the website" line="15">
+<kw name="To Validate Successful Login">
+<kw name="Open The Browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:40.492917" level="INFO">Opening browser 'Edge' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>https://www.saucedemo.com/v1/index.html</arg>
+<arg>browser=Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T22:01:40.492655" elapsed="2.227128"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T22:01:42.720452" elapsed="0.071162"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T22:01:42.792310" elapsed="0.004461"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:40.491901" elapsed="2.305570"/>
+</kw>
+<kw name="Fill the Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:42.801131" level="INFO">Typing text 'standard_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:42.800303" elapsed="0.334358"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:43.136007" level="INFO">Typing password into text field 'css:input[id="password"]'.</msg>
+<msg time="2025-05-19T22:01:43.209720" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:43.135220" elapsed="0.200427"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:43.336451" level="INFO">Clicking element 'css:input[type="submit"]'.</msg>
+<arg>css:input[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:43.336127" elapsed="1.672560"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T22:01:42.798608" elapsed="2.210453"/>
+</kw>
+<kw name="Verify the login successful">
+<if>
+<branch type="IF" condition="'${username}' in ['standard_user', 'problem_user', 'performance_glitch_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${product_text}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:01:45.011418" elapsed="0.000109"/>
+</kw>
+<if>
+<branch type="IF" condition="'${username}' in ['locked_out_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${error_msg}</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:01:45.012192" elapsed="0.000101"/>
+</kw>
+<status status="NOT RUN" start="2025-05-19T22:01:45.011822" elapsed="0.000600"/>
+</branch>
+<status status="NOT RUN" start="2025-05-19T22:01:45.011752" elapsed="0.000783"/>
+</if>
+<status status="NOT RUN" start="2025-05-19T22:01:45.010668" elapsed="0.001942"/>
+</branch>
+<status status="PASS" start="2025-05-19T22:01:45.010556" elapsed="0.002148"/>
+</if>
+<status status="PASS" start="2025-05-19T22:01:45.009810" elapsed="0.003022"/>
+</kw>
+<kw name=" Close Browser Session">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T22:01:45.013720" elapsed="2.303320"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:45.013118" elapsed="2.304341"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-19T22:01:40.491408" elapsed="6.826231"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:40.489339" elapsed="6.830320"/>
+</test>
+<test id="s1-t2" name="Login to the website" line="15">
+<kw name="To Validate Successful Login">
+<kw name="Open The Browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:47.327828" level="INFO">Opening browser 'Edge' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>https://www.saucedemo.com/v1/index.html</arg>
+<arg>browser=Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T22:01:47.327447" elapsed="2.537222"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T22:01:49.865102" elapsed="0.069886"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T22:01:49.935422" elapsed="0.002620"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:47.326903" elapsed="2.611427"/>
+</kw>
+<kw name="Fill the Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:49.942994" level="INFO">Typing text 'problem_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:49.942110" elapsed="0.264410"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:50.207086" level="INFO">Typing password into text field 'css:input[id="password"]'.</msg>
+<msg time="2025-05-19T22:01:50.245608" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:50.206770" elapsed="0.123765"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:50.331492" level="INFO">Clicking element 'css:input[type="submit"]'.</msg>
+<arg>css:input[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:50.330950" elapsed="0.315968"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T22:01:49.938762" elapsed="0.708443"/>
+</kw>
+<kw name="Verify the login successful">
+<if>
+<branch type="IF" condition="'${username}' in ['standard_user', 'problem_user', 'performance_glitch_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${product_text}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:01:50.648902" elapsed="0.000080"/>
+</kw>
+<if>
+<branch type="IF" condition="'${username}' in ['locked_out_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${error_msg}</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:01:50.649451" elapsed="0.000247"/>
+</kw>
+<status status="NOT RUN" start="2025-05-19T22:01:50.649185" elapsed="0.000674"/>
+</branch>
+<status status="NOT RUN" start="2025-05-19T22:01:50.649139" elapsed="0.000844"/>
+</if>
+<status status="NOT RUN" start="2025-05-19T22:01:50.648379" elapsed="0.001682"/>
+</branch>
+<status status="PASS" start="2025-05-19T22:01:50.648319" elapsed="0.002170"/>
+</if>
+<status status="PASS" start="2025-05-19T22:01:50.647758" elapsed="0.002915"/>
+</kw>
+<kw name=" Close Browser Session">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T22:01:50.651748" elapsed="2.317989"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:50.651016" elapsed="2.318987"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-19T22:01:47.326160" elapsed="5.643971"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:47.321228" elapsed="5.649600"/>
+</test>
+<test id="s1-t3" name="Login to the website" line="15">
+<kw name="To Validate Successful Login">
+<kw name="Open The Browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:52.977612" level="INFO">Opening browser 'Edge' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>https://www.saucedemo.com/v1/index.html</arg>
+<arg>browser=Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T22:01:52.977060" elapsed="2.511100"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T22:01:55.488505" elapsed="0.078050"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T22:01:55.566914" elapsed="0.003693"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:52.976152" elapsed="2.594686"/>
+</kw>
+<kw name="Fill the Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:55.574398" level="INFO">Typing text 'performance_glitch_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:55.573057" elapsed="0.275927"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:55.849622" level="INFO">Typing password into text field 'css:input[id="password"]'.</msg>
+<msg time="2025-05-19T22:01:55.894718" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:55.849266" elapsed="0.141008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:01:55.991641" level="INFO">Clicking element 'css:input[type="submit"]'.</msg>
+<arg>css:input[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:01:55.990694" elapsed="5.831429"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T22:01:55.571513" elapsed="6.250773"/>
+</kw>
+<kw name="Verify the login successful">
+<if>
+<branch type="IF" condition="'${username}' in ['standard_user', 'problem_user', 'performance_glitch_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${product_text}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:02:01.823916" elapsed="0.000065"/>
+</kw>
+<if>
+<branch type="IF" condition="'${username}' in ['locked_out_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${error_msg}</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:02:01.824437" elapsed="0.000057"/>
+</kw>
+<status status="NOT RUN" start="2025-05-19T22:02:01.824194" elapsed="0.000384"/>
+</branch>
+<status status="NOT RUN" start="2025-05-19T22:02:01.824150" elapsed="0.000499"/>
+</if>
+<status status="NOT RUN" start="2025-05-19T22:02:01.823394" elapsed="0.001311"/>
+</branch>
+<status status="PASS" start="2025-05-19T22:02:01.823342" elapsed="0.001417"/>
+</if>
+<status status="PASS" start="2025-05-19T22:02:01.822845" elapsed="0.002018"/>
+</kw>
+<kw name=" Close Browser Session">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T22:02:01.825322" elapsed="2.223592"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:02:01.825064" elapsed="2.224155"/>
+</kw>
+<arg>username=performance_glitch_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-19T22:01:52.975310" elapsed="11.074040"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:01:52.972423" elapsed="11.077855"/>
+</test>
+<test id="s1-t4" name="Login to the website" line="15">
+<kw name="To Validate Successful Login">
+<kw name="Open The Browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:02:04.055301" level="INFO">Opening browser 'Edge' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>https://www.saucedemo.com/v1/index.html</arg>
+<arg>browser=Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T22:02:04.055001" elapsed="2.528847"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T22:02:06.584789" elapsed="0.223927"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T22:02:06.809942" elapsed="0.005722"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:02:04.054590" elapsed="2.761478"/>
+</kw>
+<kw name="Fill the Login Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:02:06.819018" level="INFO">Typing text 'locked_out_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:02:06.818260" elapsed="0.346805"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:02:07.166143" level="INFO">Typing password into text field 'css:input[id="password"]'.</msg>
+<msg time="2025-05-19T22:02:07.246395" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:02:07.165539" elapsed="0.188706"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-19T22:02:07.354995" level="INFO">Clicking element 'css:input[type="submit"]'.</msg>
+<arg>css:input[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T22:02:07.354629" elapsed="0.249458"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T22:02:06.816517" elapsed="0.787881"/>
+</kw>
+<kw name="Verify the login successful">
+<if>
+<branch type="IF" condition="'${username}' in ['standard_user', 'problem_user', 'performance_glitch_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${product_text}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:02:07.608395" elapsed="0.000148"/>
+</kw>
+<if>
+<branch type="IF" condition="'${username}' in ['locked_out_user']">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${error_msg}</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-05-19T22:02:07.609467" elapsed="0.000133"/>
+</kw>
+<status status="NOT RUN" start="2025-05-19T22:02:07.608826" elapsed="0.001325"/>
+</branch>
+<status status="NOT RUN" start="2025-05-19T22:02:07.608769" elapsed="0.001599"/>
+</if>
+<status status="NOT RUN" start="2025-05-19T22:02:07.607179" elapsed="0.003288"/>
+</branch>
+<status status="PASS" start="2025-05-19T22:02:07.607059" elapsed="0.003543"/>
+</if>
+<status status="PASS" start="2025-05-19T22:02:07.605391" elapsed="0.005443"/>
+</kw>
+<kw name=" Close Browser Session">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T22:02:07.612159" elapsed="2.400468"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:02:07.611322" elapsed="2.401565"/>
+</kw>
+<arg>username=locked_out_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-19T22:02:04.054002" elapsed="5.959022"/>
+</kw>
+<status status="PASS" start="2025-05-19T22:02:04.051469" elapsed="5.962068"/>
+</test>
+<doc>To verify the login functionality for sauce demo website</doc>
+<status status="PASS" start="2025-05-19T22:01:38.373968" elapsed="31.640760"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="4" fail="0" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-19T22:01:47.321625" level="WARN">Multiple tests with name 'Login to the website' executed in suite 'Test Login'.</msg>
+<msg time="2025-05-19T22:01:52.972524" level="WARN">Multiple tests with name 'Login to the website' executed in suite 'Test Login'.</msg>
+<msg time="2025-05-19T22:02:04.051614" level="WARN">Multiple tests with name 'Login to the website' executed in suite 'Test Login'.</msg>
+</errors>
+</robot>

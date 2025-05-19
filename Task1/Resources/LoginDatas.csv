@@ -1,0 +1,2 @@
+*** Test Cases ***,${username},${password}
+valid username,standard_user,secret_sauce
