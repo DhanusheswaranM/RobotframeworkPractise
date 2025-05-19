@@ -16,6 +16,7 @@ Drag and drop test case
 *** Keywords ***
 Open the browser with url
     Create Webdriver    ${browser_name}
+    
     Go To    https://demoqa.com/droppable
     Maximize Browser Window
     Set Browser Implicit Wait    5s
