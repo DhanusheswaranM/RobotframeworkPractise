@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Suite Teardown    Close All Browsers
 
 *** Variables ***
-${browser_name}    
+${browser_name}    Chrome
 
 *** Test Cases ***
 Drag and drop test case
@@ -16,7 +16,7 @@ Drag and drop test case
 *** Keywords ***
 Open the browser with url
     Create Webdriver    ${browser_name}
-    
+
     Go To    https://demoqa.com/droppable
     Maximize Browser Window
     Set Browser Implicit Wait    5s
