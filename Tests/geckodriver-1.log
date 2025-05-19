@@ -1,0 +1,19 @@
+1747387161468	geckodriver	INFO	Listening on 127.0.0.1:60257
+1747387164664	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60258" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DHANUS~2\\AppData\\Local\\Temp\\rust_mozprofileFfOj3t"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747387165477	Marionette	INFO	Marionette enabled
+1747387165747	Marionette	INFO	Listening on port 60269
+WebDriver BiDi listening on ws://127.0.0.1:60258
+Read port: 60269
+1747387165986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/UCpX6q66KB_hOjxrmoyGZsnrzP7B-tXc0-pqGFuD0k0.js line 2 > eval line 3270 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.jsdelivr.net/npm/@docsearch/js@3.6.0, line 8: TypeError: t is null
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true, line 2: Script terminated by timeout at:
+r@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:2:448
+y@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:7:308
+If/this.S@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:75:186
+
+1747387362830	Marionette	INFO	Stopped listening on port 60269
+Dynamically enable window occlusion 1

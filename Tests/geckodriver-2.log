@@ -1,0 +1,37 @@
+1747388079052	geckodriver	INFO	Listening on 127.0.0.1:61104
+1747388082140	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61105" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DHANUS~2\\AppData\\Local\\Temp\\rust_mozprofileCbZWQa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747388082805	Marionette	INFO	Marionette enabled
+1747388083047	Marionette	INFO	Listening on port 61117
+Read port: 61117
+WebDriver BiDi listening on ws://127.0.0.1:61105
+1747388083168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/UCpX6q66KB_hOjxrmoyGZsnrzP7B-tXc0-pqGFuD0k0.js line 2 > eval line 4572 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/UCpX6q66KB_hOjxrmoyGZsnrzP7B-tXc0-pqGFuD0k0.js line 2 > eval line 6185 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.jsdelivr.net/npm/@docsearch/js@3.6.0, line 8: TypeError: t is null
+1747388113163	Marionette	INFO	Stopped listening on port 61117
+Dynamically enable window occlusion 1
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505070101/show_ads_impl_fy2021.js?bust=31092429, line 350: Script terminated by timeout at:
+dI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505070101/show_ads_impl_fy2021.js?bust=31092429:350:35
+cI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505070101/show_ads_impl_fy2021.js?bust=31092429:349:733
+aI/<@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505070101/show_ads_impl_fy2021.js?bust=31092429:349:868
+
+console.warn: services.settings: main/cfr sync interrupted by shutdown
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.warn: services.settings: main/tracking-protection-lists sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/translations-models sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/nimbus-secure-experiments sync interrupted by shutdown
+console.warn: services.settings: main/top-sites sync interrupted by shutdown
+console.warn: services.settings: main/newtab-wallpapers-v2 sync interrupted by shutdown
+console.warn: services.settings: main/password-rules sync interrupted by shutdown
+console.warn: services.settings: main/url-parser-default-unknown-schemes-interventions sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/websites-with-shared-credential-backends getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
