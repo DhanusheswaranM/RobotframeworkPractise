@@ -24,7 +24,7 @@ To Validate Successful Login
 
 
 Open The Browser with url
-    Open Browser    https://www.saucedemo.com/v1/index.html    browser=Edge
+    Open Browser    https://www.saucedemo.com/v1/index.html    browser=Firefox
     Maximize Browser Window
     Set Selenium Implicit Wait    5s
 
