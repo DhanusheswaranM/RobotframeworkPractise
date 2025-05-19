@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Test Template 
 Library    SeleniumLibrary
-Library    DataDriver    file=DataDrivenProject/DataDrivenProject/Resources/LoginData.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=D:/RobotframeworkPractise/DataDrivenProject/Resources/LoginData.csv    encoding=utf_8    dialect=unix
 Test Template    Validate UnSuccessful Login
 
 *** Variables ***
