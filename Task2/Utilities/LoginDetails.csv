@@ -1,0 +1,7 @@
+*** Test Cases ***,${username},${password}
+valid credentials,standard_user,secret_sauce
+locked user,locked_out_user,secret_sauce
+problem user,problem_user,secret_sauce
+performance glitch user,performance_glitch_user,secret_sauce
+error user,error_user,secret_sauce
+visual user,visual_user,secret_sauce
