@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation    To verify the login functionality for sauce demo website
 Library     SeleniumLibrary
-Library    DataDriver    file=D:\\RobotframeworkPractise\\Task1\\Resources\\LoginDatas.csv    encoding=utf_8    dialect=unix
-# Library    DataDriver    file=D:\\RobotframeworkPractise\\Task1\\Resources\\LoginDataUsingExcel.xlsx    sheet_name=Sheet1
+# Library    DataDriver    file=D:\\RobotframeworkPractise\\Task1\\Resources\\LoginDatas.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=D:\\RobotframeworkPractise\\Task1\\Resources\\LoginDataUsingExcel.xlsx    sheet_name=Sheet1
 Test Template    To Validate Successful Login
 
 *** Variables ***
