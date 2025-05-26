@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Test Template 
 Library    SeleniumLibrary
-Library    DataDriver    file=D:\\RobotframeworkPractise\\DataDrivenProject\\Resources\\LoginData_Excel.xlsx    sheet_name=Sheet1    
+Library    DataDriver    file=../DataDrivenProject/Resources/LoginData_Excel.xlsx    sheet_name=Sheet1    
 Test Template    Validate UnSuccessful Login
 
 *** Variables ***

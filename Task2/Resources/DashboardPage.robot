@@ -49,7 +49,6 @@ Checking the links
         ELSE
             Log To Console    Broken link : ${href} [${status_code}]    
         END
-        
     END
     
 Menu options functionality
