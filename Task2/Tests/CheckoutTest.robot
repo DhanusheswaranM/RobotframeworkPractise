@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    This test file is to checkout the product
 Library    SeleniumLibrary
-Library    DataDriver    file=D:\\RobotframeworkPractise\\Task2\\Utilities\\CheckOutDetails.xlsx    sheet_name=Sheet1
+Library    DataDriver    file=../Task2/Utilities/CheckOutDetails.xlsx    sheet_name=Sheet1
 Test Setup    Open the url with the browser
 Test Teardown    Close Browser Sessions
 Resource    ../Resources/GenericResource.robot

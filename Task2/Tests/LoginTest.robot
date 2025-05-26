@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    To login into the website
 Library    SeleniumLibrary
-Library    DataDriver    file=D:\\RobotframeworkPractise\\Task2\\Utilities\\LoginDetails.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=../Task2/Utilities/LoginDetails.csv    encoding=utf_8    dialect=unix
 Test Setup    Open the url with the browser
 Test Teardown    Close Browser Sessions
 Resource    ../Resources/GenericResource.robot
